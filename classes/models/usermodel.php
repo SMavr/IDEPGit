@@ -1,7 +1,10 @@
 <?php
 defined("EXEC") or ("You do not have access to that file");
 require_once ROOT.'classes'.DS.'tables'.DS.'userinfo.php';
+
+//this model manipulates users 
 class UserModel extends Logic{
+   
     public function __construct() {
         parent::__construct();
     }
@@ -24,6 +27,14 @@ class UserModel extends Logic{
             }
             return $users;}
             return false;
+    }
+    
+    public function insertUser($userinfo){
+            $user=new UserInfo($userinfo);
+            $this->db->setQuery("INSERT INTO user (username, password)
+                               VALUES ('$user->username','$user->password')");
+        
+        
     }
     
 }

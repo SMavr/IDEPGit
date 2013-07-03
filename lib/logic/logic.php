@@ -3,7 +3,7 @@
 defined("EXEC") or ("You do not have access to that file");
 require_once LIB_ROOT.'database'.DS.'mysql.php';
 require_once LIB_ROOT.'config.php';
-// the main logic (all of the classes are going to extend that php class)
+// class for objects that have properties
 class Logic {
     public $db=null;
     

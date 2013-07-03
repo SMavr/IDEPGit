@@ -15,10 +15,6 @@ class UserInfo extends Logic{
        
        if(is_object($userdata)){
            foreach ($userdata as $key=>$value){
-           if($this->get($key)){
-               $this->$key=$value;
-           }
-           else
                $this->$key=$value;
        }
        
