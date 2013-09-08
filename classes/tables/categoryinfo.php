@@ -1,14 +1,15 @@
 <?php
-
-//storing attributes (title,value)
+//Storing information about one category
 defined("EXEC") or ("You do not have access to that file");
 require LOGIC;
 
-class AttrInfo extends Logic{
-public $attr_id;
-public $attr_title;
-    
-    public function __construct($data) {
+class CategoryInfo extends Logic{
+public $category_id=null;
+public $ctitle=null;
+public $cweight=null;// optional? 
+
+
+public function __construct($data) {
        parent::__construct();
    
        if(is_object($data)){
@@ -22,5 +23,4 @@ public $attr_title;
     
    
 }
-
 ?>

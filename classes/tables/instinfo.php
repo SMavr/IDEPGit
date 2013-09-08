@@ -1,12 +1,10 @@
 <?php
-
-//storing attributes (title,value)
 defined("EXEC") or ("You do not have access to that file");
 require LOGIC;
-
-class AttrInfo extends Logic{
-public $attr_id;
-public $attr_title;
+//Storing information about an instruction
+class InstInfo extends Logic{
+public $instruction_id;
+public $instruction;
     
     public function __construct($data) {
        parent::__construct();

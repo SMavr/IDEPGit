@@ -1,12 +1,13 @@
 <?php
 
-//storing attributes (title,value)
+//Storing the relative weight of an attribute for a question
 defined("EXEC") or ("You do not have access to that file");
 require LOGIC;
 
-class AttrInfo extends Logic{
-public $attr_id;
-public $attr_title;
+class EvweightInfo extends Logic{
+public $question_id=null;
+public $attr_id=null;
+public $ev_value=null;
     
     public function __construct($data) {
        parent::__construct();
@@ -22,5 +23,4 @@ public $attr_title;
     
    
 }
-
 ?>

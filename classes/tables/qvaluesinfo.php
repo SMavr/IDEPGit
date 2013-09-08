@@ -1,14 +1,17 @@
 <?php
+//Storing the possible values for one question
 
-//storing attributes (title,value)
 defined("EXEC") or ("You do not have access to that file");
 require LOGIC;
 
-class AttrInfo extends Logic{
-public $attr_id;
-public $attr_title;
-    
-    public function __construct($data) {
+
+class QvaluesInfo extends Logic{
+   public $qv_id=null;
+   public $qv_value=null;
+   public $qv_text=null;
+   public $question_id=null;
+   
+   public function __construct($data) {
        parent::__construct();
    
        if(is_object($data)){
@@ -19,8 +22,6 @@ public $attr_title;
        }
    
 }
-    
-   
 }
 
 ?>

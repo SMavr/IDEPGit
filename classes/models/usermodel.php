@@ -37,6 +37,7 @@ class UserModel extends Logic{
         
     }
     
+    
 }
 
 ?>
