@@ -4,7 +4,9 @@ require_once ROOT.'classes'.DS.'tables'.DS.'userinfo.php';
 
 //this model manipulates instructions
 class instructionmodel {
-    
+  public function __construct() {
+        parent::__construct();
+    }  
     
    //get instructions by id
     public function  getInst($id){
