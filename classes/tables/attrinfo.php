@@ -2,11 +2,11 @@
 
 //storing attributes (title,value)
 defined("EXEC") or ("You do not have access to that file");
-require LOGIC;
+
 
 class AttrInfo extends Logic{
-public $attr_id;
-public $attr_title;
+public $attr_id=null;
+public $attr_title=null;
     
     public function __construct($data) {
        parent::__construct();

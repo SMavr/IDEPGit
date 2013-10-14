@@ -10,6 +10,7 @@ class Logic {
     public function __construct() {
         $config=new Config();
         $this->db = new MySqlAdaptor();
+        // here happens the connection
          $this->db->Connect($config->Host,$config->Username,$config->Password,$config->Database);
         
     }

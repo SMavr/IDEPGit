@@ -2,7 +2,7 @@
 
 //storing the answer of an Evaluator for a specific question from a specific Idea
 defined("EXEC") or ("You do not have access to that file");
-require LOGIC;
+
 
 class AnswerInfo extends Logic{
 public $answer_id=null;

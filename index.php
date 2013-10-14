@@ -1,9 +1,9 @@
 <?php
 require_once 'lib/framework.php';
-
-//require_once CONS.DS.'usercon.php';
+require LOGIC;
+require_once CONS.DS.'usercon.php';
 //require_once TABLES.DS.'ideainfo.php';
-//require_once VIEWS.'admin'.DS.'usersview.php';
+require_once VIEWS.'admin'.DS.'usersview.php';
 //require_once VIEWS.'login.php';
 
 
@@ -11,13 +11,19 @@ require_once 'lib/framework.php';
 
 // here we can test if the model sql questions work
 echo "<pre>";
+//testing usertoattr
+//require_once TABLES.DS.'usertoattrinfo.php';
+//require_once MODELS.DS.'usertoattrmodel.php';
+//$usertoattrmodel=new UserToAttrModel();
+//print_r($usertoattrmodel->getUserAttrs(1));
+
 
 //testing answers
-require_once TABLES.DS.'answerinfo.php';
-require_once MODELS.DS.'answermodel.php';
-$answermodel=new AnswerModel();
+//require_once TABLES.DS.'answerinfo.php';
+//require_once MODELS.DS.'answermodel.php';
+//$answermodel=new AnswerModel();
 //print_r($answermodel->getAnswer(4));
-print_r($answermodel->getAnswers());
+//print_r($answermodel->getAnswers());
 
 //testing categories
 //require_once TABLES.DS.'categoryinfo.php';
