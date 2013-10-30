@@ -22,7 +22,7 @@ class Logic {
            if(property_exists($object, $property)){
                return $object->$property;
            }
-              if  (property_exists($this, $object)) {
+             if  (property_exists($this, $object)) {
                   
                   if (property_exists($this->$object, $property)){
                       return $this->$object->$property;

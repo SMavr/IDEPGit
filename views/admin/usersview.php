@@ -24,16 +24,18 @@
                $controller=new UserCon();
             //   $users_array=$controller->loadUsers();
                $attrs_array=$controller->loadAttrs();
-               $attrs_from_a_user=$controller->loadAttrPerUser(1);
+               $attrs_from_a_user=$controller->loadAttrsPerUserAsString(1);
                echo '<tr><td>'.$attrs_from_a_user.'</td></tr>';
                foreach ($attrs_array as $value)
-                   echo '<tr><td>'.$controller->attrmodel->get('attr_title',$value).'<td><tr> ';?>
+                   echo '<tr><td>'.$controller->attrmodel->get('attr_title',$value).'<td><tr> ';
+                  
 //              foreach ($users_array as $value) 
 //                  echo '<tr><td>'.$controller->usermodel->get('username',$value).
 //                      '</td><td>'.$controller->usermodel->get('password',$value).'</td>
 //                          <td>'.$controller->usermodel->get('role',$value).'</td><td>'
 //                              .$controller->attrmodel->get('attr_title',$value)
-//                      .'</td></tr>';?>
+//                      .'</td></tr>';
+?>
             
                  
                </table>

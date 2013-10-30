@@ -74,7 +74,11 @@ class UserToAttrModel extends Logic
         return false;
     }
 
-    //insert a new attribute to a user
+    /*
+     * insert a new attribute to a user
+     * @param $user_id the id of the user
+     * @param $attr_id the id of the attribute
+     */
     public function insertUserToAttr($user_id, $attr_id)
     {
         $this->db->setQuery("INSERT INTO usertoattr (user_id, attr_id)
