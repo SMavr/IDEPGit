@@ -1,7 +1,7 @@
 <?php
 //Storing information about one category
 defined("EXEC") or ("You do not have access to that file");
-require LOGIC;
+
 
 class CategoryInfo extends Logic{
 public $category_id=null;

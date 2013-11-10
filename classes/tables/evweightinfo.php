@@ -2,7 +2,7 @@
 
 //Storing the relative weight of an attribute for a question
 defined("EXEC") or ("You do not have access to that file");
-require LOGIC;
+
 
 class EvweightInfo extends Logic{
 public $question_id=null;

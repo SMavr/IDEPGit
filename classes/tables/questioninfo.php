@@ -1,7 +1,7 @@
 <?php
 
 defined("EXEC") or ("You do not have access to that file");
-require LOGIC;
+
 
 
 //storing the info of a question

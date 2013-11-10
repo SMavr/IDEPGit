@@ -1,15 +1,20 @@
 <?php
 require_once 'lib/framework.php';
 require LOGIC;
-require_once CONS.DS.'usercon.php';
 //require_once TABLES.DS.'ideainfo.php';
-require_once VIEWS.'admin'.DS.'usersview.php';
 //require_once VIEWS.'login.php';
 
+/*
+ * Set here the view you want to display
+ */
+//require_once CONS.DS.'usercon.php';
+//require_once VIEWS.'admin'.DS.'usersview.php';
+require_once CONS.DS.'questioncon.php';
+require_once VIEWS.'admin'.DS.'questionview.php';
 
-
-
-// here we can test if the model sql questions work
+/*
+ * Here you can test if the models work
+ */
 echo "<pre>";
 //testing usertoattr
 //require_once TABLES.DS.'usertoattrinfo.php';
@@ -48,6 +53,13 @@ echo "<pre>";
 //$logic->db->setQuery("select * from user");
 //
 //print_r($logic->db->getRows());
+
+//testing questions
+//require_once TABLES.DS.'questioninfo.php';
+//require_once MODELS.DS.'questionmodel.php';
+//$questionmodel =new QuestionModel();
+//print_r($questionmodel->getQuestion(1));
+//print_r($questionmodel->getQuestions());
 ?>
 
 

@@ -1,6 +1,6 @@
 <?php
 defined("EXEC") or ("You do not have access to that file");
-require LOGIC;
+
 //Storing information about an instruction
 class InstInfo extends Logic{
 public $instruction_id;

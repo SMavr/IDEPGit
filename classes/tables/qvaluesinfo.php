@@ -2,7 +2,7 @@
 //Storing the possible values for one question
 
 defined("EXEC") or ("You do not have access to that file");
-require LOGIC;
+
 
 
 class QvaluesInfo extends Logic{

@@ -36,9 +36,9 @@ class QuestionModel extends Logic
         $this->db->setQuery("SELECT * FROM question");
         if ($this->db->getNumRows() > 0)
         {
-            foreach ($this->db->getRows() as $key => $questions)
+            foreach ($this->db->getRows() as $key => $question)
             {
-                $questions[$questions->question_id] = new QuestionInfo($questions);
+                $questions[$question->question_id] = new QuestionInfo($question);
             }
             return $questions;
         }

@@ -2,7 +2,7 @@
 
 //Storing information for an Idea
 defined("EXEC") or ("You do not have access to that file");
-require LOGIC;
+
 
 class IdeaInfo extends Logic{
 public $idea_id=null;
