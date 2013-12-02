@@ -1,4 +1,6 @@
 <?php
+defined("EXEC") or ("You do not have access to that file");
+require_once ROOT . 'classes' . DS . 'tables' . DS . 'answerinfo.php';
  //this model manipulates the answers of evaluator
  
 class AnswerModel extends Logic{
@@ -16,7 +18,8 @@ class AnswerModel extends Logic{
     
     
     //get the all the answers
-    public function getAnswers(){
+    public function getAnswers()
+            {
         $answers=array();
         $this->db->setQuery("SELECT * FROM answer");
         if($this->db->getNumRows()>0){
@@ -24,6 +27,19 @@ class AnswerModel extends Logic{
                 $answers[$answer->answer_id]= new AnswerInfo($answer);
             }
             return $answers;}
+            return false;
+    }
+    
+    //get all the possible answers from a specific question
+    public function getAnswersPerQuestion($id)
+    {
+        $answers_array=array();
+        $this->db->setQuery("SELECT * FROM answer WHERE question_id=".$id);
+        if($this->db->getNumRows()>0){
+            foreach ($this->db->getRows() as $key => $answer){
+                $answers_array[$answer->answer_id]= new AnswerInfo($answer);
+            }
+            return $answers_array;}
             return false;
     }
   
